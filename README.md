@@ -1,36 +1,50 @@
-**🎧 Speech-to-Text Pipeline Using Whisper + Audio Preprocessing
-**
+## 🎧 Speech-to-Text Pipeline Using Whisper + Audio Preprocessing
 
-This project builds a complete automatic speech recognition (ASR) workflow using OpenAI Whisper, combined with robust audio preprocessing and post-processing steps. The notebook handles the entire pipeline: loading audio, cleaning it, transcribing it using Whisper, and generating a final submission file.
+A complete Automatic Speech Recognition (ASR) workflow built using OpenAI Whisper, enriched with strong audio preprocessing, transcription, and output generation steps.
+This project handles everything end-to-end — from loading raw audio to producing a final submission.csv.
 
-**🔹 Key Features**
-Audio Preprocessing
+## ✨ Features
+🔊 Audio Preprocessing
 
-Used librosa to load, resample, trim silence, and normalize audio signals for consistent Whisper input.
+Librosa-based pipeline for loading audio files.
 
-Whisper Model Integration
+Resampling, silence trimming, and normalization for high-quality transcription.
 
-Loaded an OpenAI Whisper model (base/small/medium depending on your code).
+Ensures consistent and Whisper-friendly input formats.
 
-Generated transcriptions, handled batching, GPU/CPU fallback, and decoding optimizations.
+🤖 Whisper Model Integration
 
-Prediction & Post-processing
+Loads OpenAI Whisper models (base/small/medium).
 
-Converted raw model output into clean text.
+Handles GPU/CPU fallback, batching, and efficient decoding.
 
-Applied formatting rules and validated transcription quality.
+Produces accurate text transcriptions from raw audio clips.
 
-Submission File Generation
+📝 Prediction & Post-processing
 
-Created the final submission.csv by combining model output with the required dataset structure.
-**
-📁 Technologies Used**
+Converts Whisper model outputs into clean, readable text.
+
+Applies formatting rules, quality checks, and corrections.
+
+Ensures prediction stability across diverse audio samples.
+
+📄 Submission File Generation
+
+Automatically creates submission.csv with:
+
+IDs from the dataset
+
+Whisper-generated transcriptions
+
+Ready for evaluation or competition submissions.
+
+## 📁 Technologies Used
 
 Python
 
 OpenAI Whisper
 
-Librosa (audio processing)
+Librosa (audio preprocessing)
 
 Torch (model inference)
 
